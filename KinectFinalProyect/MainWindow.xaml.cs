@@ -17,7 +17,7 @@ namespace KinectFinalProyect
 {
         //branch version1.0 oscar
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para MainWindow.xaml merge con master
     /// </summary>
     public partial class MainWindow : Window
     {
