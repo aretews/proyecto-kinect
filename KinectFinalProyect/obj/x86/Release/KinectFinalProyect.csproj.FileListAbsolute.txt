@@ -1,0 +1,11 @@
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\bin\Release\KinectFinalProyect.exe
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\bin\Release\KinectFinalProyect.pdb
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\MainWindow.baml
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\MainWindow.g.cs
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\App.g.cs
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect_MarkupCompile.cache
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.g.resources
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.Properties.Resources.resources
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.csproj.GenerateResource.Cache
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.exe
+C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.pdb
