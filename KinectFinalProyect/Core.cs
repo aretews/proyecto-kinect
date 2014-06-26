@@ -7,7 +7,7 @@ namespace KinectFinalProyect
 {
     class Core
     {
-
+       
 
     }
 }

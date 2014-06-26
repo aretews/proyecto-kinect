@@ -15,6 +15,7 @@ using Microsoft.Kinect;
 
 namespace KinectFinalProyect
 {
+        //branch version1.0 oscar
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
@@ -33,7 +34,7 @@ namespace KinectFinalProyect
             //mostrar navegador
             RunBrowser("http://www.chartjs.org/");
             //activar el kinect
-            
+            //al hacer click sobre el boton activar 
 
         }
         //obtener el sensor del kinect
