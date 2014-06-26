@@ -33,7 +33,7 @@ namespace KinectFinalProyect
             //mostrar navegador
             RunBrowser("http://www.chartjs.org/");
             //activar el kinect
-            //al hacer click sobre el boton activar
+            //al hacer click sobre el boton activar  cambios
 
         }
         //obtener el sensor del kinect
