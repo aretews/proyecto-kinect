@@ -20,3 +20,4 @@ C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debu
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.g.resources
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.Properties.Resources.resources
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.csproj.GenerateResource.Cache
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.csprojResolveAssemblyReference.cache
