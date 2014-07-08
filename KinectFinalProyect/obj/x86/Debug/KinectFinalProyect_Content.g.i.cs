@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("status.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("microsoft.speech.dll")]
 
 

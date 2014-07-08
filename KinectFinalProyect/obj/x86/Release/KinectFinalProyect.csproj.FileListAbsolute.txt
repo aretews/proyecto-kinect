@@ -9,3 +9,15 @@ C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86
 C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.csproj.GenerateResource.Cache
 C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.exe
 C:\openCV_proyect_face_recognition\KinectFinalProyect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.pdb
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.exe
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.pdb
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\KinectFinalProyect.exe
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\KinectFinalProyect.pdb
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Microsoft.Speech.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\MainWindow.baml
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\MainWindow.g.cs
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\App.g.cs
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect_MarkupCompile.cache
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.g.resources
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.Properties.Resources.resources
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.csproj.GenerateResource.Cache

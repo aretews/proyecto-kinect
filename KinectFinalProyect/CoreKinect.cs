@@ -69,6 +69,7 @@ namespace KinectFinalProyect
             return bitmap;
         }
 
+        // a partir del sensor obtiene una imagen pasando un segundo
         public BitmapSource getAPicture(KinectSensor sensor)
         {
             using (var frame = sensor.ColorStream.OpenNextFrame(1000))
@@ -81,6 +82,43 @@ namespace KinectFinalProyect
                 return bitmap;
             }
         }
+
+        //obtiene una imagen del frame pasado
+        public  BitmapSource CreateBitmap(ColorImageFrame frame)
+        {
+            var pixelData = new byte[frame.PixelDataLength];
+            frame.CopyPixelDataTo(pixelData);
+            //convesion a escala de grises
+            GrayscaleData(pixelData);
+
+
+            var stride = frame.Width * frame.BytesPerPixel;
+            var bitmap = BitmapSource.Create(frame.Width,frame.Height,96,96,PixelFormats.Bgr32,null,pixelData,stride);
+
+            return bitmap;
+        }
+
+        public  void GrayscaleData(byte[] pixelData)
+        {
+            for (int i = 0; i < pixelData.Length; i += 4)
+            {
+                var max = Math.Max(pixelData[i],Math.Max(pixelData[i+1],pixelData[i+2]));
+                pixelData[i] = max;
+                pixelData[i + 1] = max;
+                pixelData[i + 2] = max;
+
+            }
+        }
+
+        //detectar la profundidad
+        /*==================================================*\
+         * PROFUNDIDAD
+         * -los ultimos 13 bits del stream indican la distancia
+         * a la cual se encuentra el objeto
+         * -los primeros 3 bits indican a que usuario estan 
+         * relacionados los pixeles
+         * 
+        \*==================================================*/
 
 
     }

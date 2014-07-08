@@ -21,3 +21,8 @@ C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debu
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.Properties.Resources.resources
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.csproj.GenerateResource.Cache
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect.csprojResolveAssemblyReference.cache
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Microsoft.Speech.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Coding4Fun.Kinect.KinectService.Common.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Coding4Fun.Kinect.KinectService.WpfClient.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Coding4Fun.Kinect.Wpf.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Microsoft.Expression.Drawing.dll

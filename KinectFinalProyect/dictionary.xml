@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0" root="names">
+  <rule id="names" scope ="public">
+    <one-of>
+      <item>kinect</item>
+      <item>salir</item>
+      <item>
+            <one-of>
+              <item>Oscar Diaz</item>
+              <item>Alex Escobedo</item>
+              <item>Juan Pablo Yarto</item>
+              <item>Federico Olivares</item>
+              <item>Miguel Marengo</item>
+              <item>Finanzas</item>        
+            </one-of>     
+      </item>
+    </one-of>
+  </rule> 
+  
+</grammar>
+  
+  
