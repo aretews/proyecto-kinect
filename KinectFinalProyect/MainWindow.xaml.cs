@@ -36,10 +36,6 @@ using System.Windows.Media;
 using System.Globalization;
 
 
-
-
-
-
 namespace KinectFinalProyect
 {
         //branch version1.0 oscar
@@ -184,7 +180,7 @@ namespace KinectFinalProyect
             }
             
             //lanzar aplicacion externa
-            generateBrowser(8);
+            generateBrowser(1);
                         
             //generateApplication("");
 
@@ -368,7 +364,7 @@ namespace KinectFinalProyect
 
                     btn_activar.Content = "Desactivar";
                     //cambiar estatus en interfaz
-                    status.Source = coreKinect.getBitMapSrc(@"C:\openCV_proyect_face_recognition\KinectFinalProyect_respaldo\KinectFinalProyect\img\status.png");
+                    status.Source = coreKinect.getBitMapSrc(@"\img\status.png");
 
                     //habilitar el stream de color
                     //sensor.ColorStream.Enable(ColorImageFormat.RgbResolution1280x960Fps12);
@@ -418,7 +414,7 @@ namespace KinectFinalProyect
                     sensor.Stop();
 
                     //cambiar estatus en interfaz
-                    status.Source = coreKinect.getBitMapSrc(@"C:\openCV_proyect_face_recognition\KinectFinalProyect_respaldo\KinectFinalProyect\img\status_off.png");
+                    status.Source = coreKinect.getBitMapSrc(@"\img\status_off.png");
 
                     //cambiar estado del boton
                     btn_activar.Content = "Activar";
