@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("microsoft.speech.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("facetrackdata.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("facetracklib.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("user32.dll")]
 
 

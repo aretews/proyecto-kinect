@@ -26,3 +26,8 @@ C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Co
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Coding4Fun.Kinect.KinectService.WpfClient.dll
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Coding4Fun.Kinect.Wpf.dll
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\user32.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Debug\KinectFinalProyect_Content.g.cs
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Kinect.Toolbox.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Kinect.Toolbox.Voice.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll

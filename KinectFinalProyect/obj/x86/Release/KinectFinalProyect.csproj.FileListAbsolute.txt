@@ -21,3 +21,13 @@ C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Rele
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.g.resources
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.Properties.Resources.resources
 C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.csproj.GenerateResource.Cache
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\user32.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Coding4Fun.Kinect.KinectService.Common.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Coding4Fun.Kinect.KinectService.WpfClient.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Coding4Fun.Kinect.Wpf.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Kinect.Toolbox.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Kinect.Toolbox.Voice.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\bin\Release\Microsoft.Kinect.Toolkit.FaceTracking.dll
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect.csprojResolveAssemblyReference.cache
+C:\Users\design\Documents\GitHub\proyecto-kinect\KinectFinalProyect\obj\x86\Release\KinectFinalProyect_Content.g.cs
