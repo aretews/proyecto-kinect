@@ -1,0 +1,13 @@
+C:\motionV2\motion\motion\bin\Debug\motion.exe.config
+C:\motionV2\motion\motion\bin\Debug\motion.exe
+C:\motionV2\motion\motion\bin\Debug\motion.pdb
+C:\motionV2\motion\motion\obj\x86\Debug\motion.csprojResolveAssemblyReference.cache
+C:\motionV2\motion\motion\obj\x86\Debug\MainWindow.baml
+C:\motionV2\motion\motion\obj\x86\Debug\MainWindow.g.cs
+C:\motionV2\motion\motion\obj\x86\Debug\App.g.cs
+C:\motionV2\motion\motion\obj\x86\Debug\motion_MarkupCompile.cache
+C:\motionV2\motion\motion\obj\x86\Debug\motion.g.resources
+C:\motionV2\motion\motion\obj\x86\Debug\motion.Properties.Resources.resources
+C:\motionV2\motion\motion\obj\x86\Debug\motion.csproj.GenerateResource.Cache
+C:\motionV2\motion\motion\obj\x86\Debug\motion.exe
+C:\motionV2\motion\motion\obj\x86\Debug\motion.pdb

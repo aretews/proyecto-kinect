@@ -1,0 +1,7 @@
+C:\motionV2\motion\motion\obj\x86\Release\MainWindow.baml
+C:\motionV2\motion\motion\obj\x86\Release\MainWindow.g.cs
+C:\motionV2\motion\motion\obj\x86\Release\App.g.cs
+C:\motionV2\motion\motion\obj\x86\Release\motion_MarkupCompile.cache
+C:\motionV2\motion\motion\obj\x86\Release\motion.g.resources
+C:\motionV2\motion\motion\obj\x86\Release\motion.Properties.Resources.resources
+C:\motionV2\motion\motion\obj\x86\Release\motion.csproj.GenerateResource.Cache

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language value="esp">
+	<greeting>Bienvenido a Motion</greeting>
+	<command-next>siguiente</command-next>
+	<command-previous>anterior</command-previous>
+	<command-last-set-left>Este es el último set de la izquierda</command-last-set-left>
+	<command-last-set-right>Este es el último set de la derecha</command-last-set-right>
+	<close>adios</close>
+</language>
+<language value="eng">
+	<greeting>Welcome to Motion</greeting>
+	<command-next>next set</command-next>
+	<command-previous>previous set</command-previous>
+	<command-last-set-left>This is the last set of the left</command-last-set-left>
+	<command-last-set-right>This is the last set of the right</command-last-set-right>
+	<close>adios</close>
+</language>
