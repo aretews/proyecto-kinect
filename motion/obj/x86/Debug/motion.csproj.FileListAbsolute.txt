@@ -11,3 +11,16 @@ C:\motionV2\motion\motion\obj\x86\Debug\motion.Properties.Resources.resources
 C:\motionV2\motion\motion\obj\x86\Debug\motion.csproj.GenerateResource.Cache
 C:\motionV2\motion\motion\obj\x86\Debug\motion.exe
 C:\motionV2\motion\motion\obj\x86\Debug\motion.pdb
+C:\motionGit\motion\bin\Debug\motion.exe.config
+C:\motionGit\motion\obj\x86\Debug\motion.exe
+C:\motionGit\motion\obj\x86\Debug\motion.pdb
+C:\motionGit\motion\bin\Debug\motion.exe
+C:\motionGit\motion\bin\Debug\motion.pdb
+C:\motionGit\motion\obj\x86\Debug\motion.csprojResolveAssemblyReference.cache
+C:\motionGit\motion\obj\x86\Debug\MainWindow.baml
+C:\motionGit\motion\obj\x86\Debug\MainWindow.g.cs
+C:\motionGit\motion\obj\x86\Debug\App.g.cs
+C:\motionGit\motion\obj\x86\Debug\motion_MarkupCompile.cache
+C:\motionGit\motion\obj\x86\Debug\motion.g.resources
+C:\motionGit\motion\obj\x86\Debug\motion.Properties.Resources.resources
+C:\motionGit\motion\obj\x86\Debug\motion.csproj.GenerateResource.Cache

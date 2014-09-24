@@ -21,5 +21,7 @@
 
         </Grid>
         <Label Content="siguiente" Height="292" HorizontalAlignment="Left" Margin="530,290,0,0" Name="lb_feedbackMov" VerticalAlignment="Top" Width="984" FontSize="200" FontFamily="Segoe UI Symbol" Opacity="1" />
+        <Canvas x:Name="loaderGesture" HorizontalAlignment="Left" Height="100" Margin="440,400,0,0" VerticalAlignment="Top" Width="1000
+                "/>
     </Grid>
 </Window>

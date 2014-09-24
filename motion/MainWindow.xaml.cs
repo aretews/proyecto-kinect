@@ -33,7 +33,7 @@ namespace motion
                 WebCore.Initialize(WebConfig.Default, true);
             }
 
-
+            
 
             InitializeComponent();
 
@@ -210,8 +210,6 @@ namespace motion
             {               
                 return false;
             }
-
-
 
 
         }//---------------------------------------------------------
@@ -421,7 +419,7 @@ namespace motion
 
         public Boolean loadKinect() {
 
-            ck.InitializeKinect(streamVideo,streamSkeleton,trackingPositionRight,trackingPositionLeft);
+            ck.InitializeKinect(streamVideo, streamSkeleton, trackingPositionRight, trackingPositionLeft, loaderGesture,this);
 
             return true;
         }

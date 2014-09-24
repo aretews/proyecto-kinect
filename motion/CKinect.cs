@@ -9,7 +9,9 @@ using Microsoft.Kinect;
 using System.Collections.Generic;
 using System.Windows.Media;
 using System.Threading;
-
+using System.Windows.Controls;
+using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace motion
 {
@@ -27,7 +29,7 @@ namespace motion
         private const double ClipBoundsThickness = 10;
         private const float InferredZPositionClamp = 0.8f;
         private readonly System.Windows.Media.Brush handClosedBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(128, 255, 0, 0));
-        private readonly System.Windows.Media.Brush handOpenBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(200, 0, 255, 0));
+        private System.Windows.Media.Brush handOpenBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(200, 0, 255, 0));
         private readonly System.Windows.Media.Brush handLassoBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(128, 0, 0, 255));
         private readonly System.Windows.Media.Brush handTracking = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(128, 255, 255, 255));
         private readonly System.Windows.Media.Brush trackedJointBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(255, 68, 192, 68));
@@ -65,16 +67,21 @@ namespace motion
 
         private string gestureActive = "icons";
         private System.Windows.Forms.Timer timerGesture = new System.Windows.Forms.Timer();
+        private Canvas loaderGesture;
+        private int widthLoader = 0;
 
 
 
-
-        public void InitializeKinect(System.Windows.Controls.Image streamVideo,System.Windows.Controls.Image streamSkeleton, List<CPoint> trackingPositionRight, List<CPoint>trackingPositionLeft)
+        public void InitializeKinect(System.Windows.Controls.Image streamVideo, System.Windows.Controls.Image streamSkeleton, List<CPoint> trackingPositionRight, List<CPoint> trackingPositionLeft, Canvas loaderGesture, MainWindow mainWin)
         {
+            //referencia al display del cargador de gesto en la interfaz
+            this.loaderGesture = loaderGesture;
+            //referencia a la aplicación principal
+            this.MainApplication = mainWin;
 
             //timer gesture
             timerGesture.Tick += new EventHandler(TimerGestureEvent);
-            timerGesture.Interval = 2000;
+            timerGesture.Interval = 12;
 
 
             //referencias para los streams de video y esqueleto
@@ -320,8 +327,6 @@ namespace motion
             //GESTOS
             //obtener la atención del kinect
 
-
-
             //siguiente set  (desplazamiento de la mano de derecha a izquierda )
             Point pointHandRight = jointPoints[JointType.HandRight];
             Point pointHandLeft = jointPoints[JointType.HandLeft];
@@ -412,26 +417,19 @@ namespace motion
         }//--------------------------------------------------------------------------------------
 
 
-        private void showControlImageRight(double posX, double posY, DrawingContext drawingContext)
+        //----------------------------- CARGA DE IMAGENES----------------------------------//
+
+
+        private void showImage(string imageUrl ,double posX, double posY, DrawingContext drawingContext)
         {
             //mostrar los botones a un lado del cuerpo para indicar que es siguiente y anterior
             BitmapImage imgSrcNext = new BitmapImage();
             imgSrcNext.BeginInit();
-            imgSrcNext.UriSource = new Uri(@"imgNext.png", UriKind.RelativeOrAbsolute);
+            imgSrcNext.UriSource = new Uri(@imageUrl, UriKind.RelativeOrAbsolute);
             imgSrcNext.EndInit();
             drawingContext.DrawImage(imgSrcNext, new Rect(posX, posY, 75, 75));
         }//-------------------------------------
-
-        private void showControlImageLeft(double posX, double posY, DrawingContext drawingContext)
-        {
-            //mostrar los botones a un lado del cuerpo para indicar que es siguiente y anterior
-            BitmapImage imgSrcNext = new BitmapImage();
-            imgSrcNext.BeginInit();
-            imgSrcNext.UriSource = new Uri(@"imgPrevious.png", UriKind.RelativeOrAbsolute);
-            imgSrcNext.EndInit();
-            drawingContext.DrawImage(imgSrcNext, new Rect(posX, posY, 75, 75));
-        }//-------------------------------------
-
+       
         private Boolean GestureGetAttentionKinect(Point rightHand,Point head,Point pointElbow) {
             
             if (rightHand.X >head.X && (rightHand.Y+20)<head.Y) { 
@@ -509,41 +507,128 @@ namespace motion
             Point pointHandRight = jointPoints[JointType.HandRight];
             Point pointHandLeft = jointPoints[JointType.HandLeft];
 
+            double[] posIconRight = { pointShoulderRight.X + 15, pointShoulderRight.Y - 75 };
+            double[] posIconLeft = { pointShoulderLeft.X - 90, pointShoulderLeft.Y - 75 };
+
+            showImage("imgNext.png",posIconRight[0], posIconRight[1], drawingContext);
+            showImage("imgPrevious.png",posIconLeft[0], posIconLeft[1], drawingContext);
 
 
-            showControlImageRight(pointShoulderRight.X+15, pointShoulderRight.Y - 75, drawingContext);
-            showControlImageLeft(pointShoulderLeft.X - 90, pointShoulderLeft.Y - 75, drawingContext);
+            Point p1 = new Point();
+            p1.X = pointShoulderLeft.X - 90;
+            p1.Y = pointShoulderLeft.Y - 75;
+
+            Point p2 = new Point();
+            p2.X = pointShoulderLeft.X - 15;
+            p2.Y = pointShoulderLeft.Y - 75;
+
+            Point p3 = new Point();
+            p3.X = pointShoulderLeft.X - 90;
+            p3.Y = pointShoulderLeft.Y ;
+
+            Point p4 = new Point();
+            p4.X = pointShoulderLeft.X - 15;
+            p4.Y = pointShoulderLeft.Y;
+
+            drawingContext.DrawEllipse(this.handClosedBrush, null, p1, 5, 5);
+            drawingContext.DrawEllipse(this.handClosedBrush, null, p2, 5, 5);
+            drawingContext.DrawEllipse(this.handClosedBrush, null, p3, 5, 5);
+            drawingContext.DrawEllipse(this.handClosedBrush, null, p4, 5, 5);
+
+
+
 
             //verificar que la mano derecha se encuentre en el área del boton marcado
 
-            if (pointHandRight.X>(pointShoulderRight.X+15) && pointHandRight.X< pointShoulderRight.X+90){
-                Console.WriteLine("en el rango de x de la figura");
+            if ((pointHandRight.X > pointShoulderRight.X + 15) && (pointHandRight.X < pointShoulderRight.X+75)
+                && (pointHandRight.Y > pointShoulderRight.Y - 75) && (pointHandRight.Y < pointShoulderRight.Y))
+                
+            {
+                //si al tener la mano sobre le icono se cumple el tiempo de espera del loader cambia a el siguiente set
+                changeSet("right");
+
+                //cambiar el cursor por una mano 
+                showImage("handRight.png", posIconRight[0], posIconRight[1], drawingContext);
+                handOpenBrush =  new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(20, 183, 82, 233));
+                
+                if (!timerGesture.Enabled) {
+                    timerGesture.Start();
+                }
+
 
             }
+            else if ((pointHandLeft.X > pointShoulderLeft.X - 90 && pointHandLeft.X < pointShoulderLeft.X - 15)
+                 && (pointHandLeft.Y > pointShoulderLeft.Y - 75 && pointHandLeft.Y < pointShoulderLeft.Y)
+                ){//validar lado izquierdo
+
+                changeSet("left");
+                //cambiar el cursor por una mano 
+                showImage("handLeft.png", posIconLeft[0], posIconLeft[1], drawingContext);
+                handOpenBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(20, 183, 82, 233));
+
+                if (!timerGesture.Enabled)
+                {
+                    timerGesture.Start();
+                }
 
 
-
-
-            drawingContextRef = drawingContext;
-
-            //activar un timer cuando la mano este en el área del boton 
-            if (timerGesture.Enabled) {
                
+            }else{ // si esta fuera de los iconos
+                
+                handOpenBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromArgb(200, 0, 255, 0));
+
+                //resetear el valor del ancho de la pantalla
+                widthLoader = 0;
+                timerGesture.Stop();
+                //quitar el diseño visual del cargador de la interfaz
+                loaderGesture.Children.Clear();
             }
 
-            timerGesture.Start();
 
-            //validar que no esta ya activo el timer si ya esta activo ya no se realiza ninguna acción
 
         }//------------------------------------------------
 
 
+        private void changeSet(string value) {
+            if (widthLoader == 1000) {
+                timerGesture.Stop();
+                MainApplication.updateBrowserWithSet(value);
+                widthLoader = 0;
+            }
+        
+        }
+
+
         private void TimerGestureEvent(object sender, EventArgs e)
         {
-            Thread.Sleep(100);
+            //crear borde del cargador
+            Rectangle rect = new Rectangle();
+            rect.Width = 1000;
+            rect.Height = 100;
+            rect.Stroke = new SolidColorBrush(Colors.Black);
+            rect.StrokeThickness = 5;
+            
 
+            Rectangle loader = new Rectangle();
+            loader.Width = widthLoader;
+            loader.Height = 100;
+            loader.Fill = new SolidColorBrush(Colors.Red);
 
-        }
+            if (widthLoader < 1000)
+            {
+                //crear relleno
+                loader.Width = loader.Width + 10;
+                loaderGesture.Children.Add(loader);
+                loaderGesture.InvalidateVisual();
+                widthLoader = widthLoader + 10;
+
+                loaderGesture.Children.Add(rect);
+                
+                
+            }
+            
+
+        }//--------------------------------------------
         
 
         public void DrawPointsSaved(DrawingContext drawingContext) {
@@ -559,9 +644,7 @@ namespace motion
 
 
         //variables gesto de seleccion de iconos
-        DrawingContext drawingContextRef;
-        Point positionHandRightValidateGestureIcons;
-
+        private MainWindow MainApplication;
 
     }
 }
